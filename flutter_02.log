@@ -1,0 +1,109 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter build bundle --suppress-analytics --target F:\Flutter Projects\m3\lib\main.dart --preview-dart-2 --filesystem-scheme org-dartlang-root --depfile F:\Flutter Projects\m3\build\app\intermediates\flutter\debug/snapshot_blob.bin.d --asset-dir F:\Flutter Projects\m3\build\app\intermediates\flutter\debug/flutter_assets --debug
+
+## exception
+
+FileSystemException: FileSystemException: Exists failed, path = 'F:\Flutter Projects\m3\build\app\intermediates\flutter\debug/flutter_assets\assets/images' (OS Error: Access is denied.
+, errno = 5)
+
+```
+#0      _Directory.existsSync (dart:io/directory_impl.dart:101:7)
+#1      _Directory.createSync (dart:io/directory_impl.dart:133:11)
+#2      _LocalDirectory&LocalFileSystemEntity&ForwardingDirectory.createSync (package:file/src/forwarding/forwarding_directory.dart:22:16)
+#3      writeBundle.<anonymous closure> (package:flutter_tools/src/bundle.dart:227:17)
+<asynchronous suspension>
+#4      MappedIterator.moveNext (dart:_internal/iterable.dart:392:18)
+#5      Future.wait (dart:async/future.dart:387:26)
+#6      writeBundle (package:flutter_tools/src/bundle.dart:224:16)
+#7      _AsyncAwaitCompleter.start (dart:async/runtime/libasync_patch.dart:49:6)
+#8      writeBundle (package:flutter_tools/src/bundle.dart:218:25)
+#9      assemble (package:flutter_tools/src/bundle.dart:214:9)
+#10     _AsyncAwaitCompleter.start (dart:async/runtime/libasync_patch.dart:49:6)
+#11     assemble (package:flutter_tools/src/bundle.dart:168:22)
+#12     build (package:flutter_tools/src/bundle.dart:133:9)
+#13     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#14     _rootRunUnary (dart:async/zone.dart:1132:38)
+#15     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#16     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#17     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#18     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#19     Future._complete (dart:async/future_impl.dart:476:7)
+#20     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#21     _AsyncAwaitCompleter.complete (dart:async/runtime/libasync_patch.dart:28:18)
+#22     _completeOnAsyncReturn (dart:async/runtime/libasync_patch.dart:295:13)
+#23     buildAssets (package:flutter_tools/src/bundle.dart)
+#24     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#25     _rootRunUnary (dart:async/zone.dart:1132:38)
+#26     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#27     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#28     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#29     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#30     Future._complete (dart:async/future_impl.dart:476:7)
+#31     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#32     _AsyncAwaitCompleter.complete (dart:async/runtime/libasync_patch.dart:28:18)
+#33     _completeOnAsyncReturn (dart:async/runtime/libasync_patch.dart:295:13)
+#34     _ManifestAssetBundle.build (package:flutter_tools/src/asset.dart)
+#35     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#36     _rootRunUnary (dart:async/zone.dart:1132:38)
+#37     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#38     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#39     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#40     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#41     Future._complete (dart:async/future_impl.dart:476:7)
+#42     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#43     _AsyncAwaitCompleter.complete (dart:async/runtime/libasync_patch.dart:28:18)
+#44     _completeOnAsyncReturn (dart:async/runtime/libasync_patch.dart:295:13)
+#45     _obtainLicenses (package:flutter_tools/src/asset.dart)
+#46     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#47     _rootRunUnary (dart:async/zone.dart:1132:38)
+#48     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#49     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#50     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#51     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#52     Future._completeWithValue (dart:async/future_impl.dart:486:5)
+#53     Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:516:7)
+#54     _rootRun (dart:async/zone.dart:1124:13)
+#55     _CustomZone.run (dart:async/zone.dart:1021:19)
+#56     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#57     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#58     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#59     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#60     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v0.7.3, on Microsoft Windows [Version 10.0.17134.254], locale en-IN)
+    • Flutter version 0.7.3 at E:\Flutter sdk
+    • Framework revision 3b309bda07 (2 weeks ago), 2018-08-28 12:39:24 -0700
+    • Engine revision af42b6dc95
+    • Dart version 2.1.0-dev.1.0.flutter-ccb16f7282
+
+[✓] Android toolchain - develop for Android devices (Android SDK 28.0.2)
+    • Android SDK at E:\SDK
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.2
+    • ANDROID_HOME = E:\SDK
+    • Java binary at: E:\Android\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+    • All Android licenses accepted.
+
+[✓] Android Studio (version 3.1)
+    • Android Studio at E:\Android
+    • Flutter plugin version 27.1.1
+    • Dart plugin version 173.4700
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b02)
+
+[✓] VS Code, 64-bit edition (version 1.27.1)
+    • VS Code at C:\Program Files\Microsoft VS Code
+    • Flutter extension version 2.18.0
+
+[✓] Connected devices (1 available)
+    • Android SDK built for x86 64 • emulator-5554 • android-x64 • Android 7.1.1 (API 25) (emulator)
+
+• No issues found!
+```
