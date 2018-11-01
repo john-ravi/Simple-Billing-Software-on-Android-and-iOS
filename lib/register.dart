@@ -3,12 +3,19 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:m3/colorspage.dart';
+<<<<<<< HEAD
 import 'package:m3/home.dart';
 import 'package:m3/main.dart';
 import 'utils.dart';
 
 import 'user.dart';
 
+=======
+import 'package:m3/main.dart';
+import 'package:m3/otp.dart';
+import 'utils.dart';
+
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
 class Register extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -23,10 +30,13 @@ class RegisterState extends State<Register> {
   TextEditingController email = new TextEditingController();
   TextEditingController password = new TextEditingController();
   TextEditingController aadharcard = new TextEditingController();
+<<<<<<< HEAD
 
   TextEditingController username = new TextEditingController();
   User user;
 
+=======
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
   bool isEmail(String em) {
     String p =
         r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
@@ -34,6 +44,7 @@ class RegisterState extends State<Register> {
     return regExp.hasMatch(em);
   }
 
+<<<<<<< HEAD
   void createUser(BuildContext context) async {
     await registerUser(user)
         .then((httpResponse) {
@@ -58,6 +69,8 @@ class RegisterState extends State<Register> {
   }
 
 
+=======
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -132,10 +145,17 @@ class RegisterState extends State<Register> {
                                           title: new TextFormField(
                                             decoration: new InputDecoration(
                                               hintText:
+<<<<<<< HEAD
                                               'Please Enter Business Name',
                                               hintStyle: TextStyle(),
                                               labelText:
                                               'Enter Your Business Name',
+=======
+                                                  'Please Enter Business Name',
+                                              hintStyle: TextStyle(),
+                                              labelText:
+                                                  'Enter Your Business Name',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               labelStyle: TextStyle(),
                                             ),
                                             keyboardType: TextInputType.text,
@@ -144,6 +164,7 @@ class RegisterState extends State<Register> {
                                         ),
                                         new ListTile(
                                           leading: const Icon(
+<<<<<<< HEAD
                                             Icons.person,
                                             color: secondarycolor,
                                           ),
@@ -161,16 +182,25 @@ class RegisterState extends State<Register> {
                                         ),
                                         new ListTile(
                                           leading: const Icon(
+=======
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                             Icons.phone,
                                             color: secondarycolor,
                                           ),
                                           title: new TextFormField(
                                             decoration: new InputDecoration(
                                               hintText:
+<<<<<<< HEAD
                                               'Please Enter Mobile Number',
                                               hintStyle: TextStyle(),
                                               labelText:
                                               '10 Digits Mobile No Requried',
+=======
+                                                  'Please Enter Mobile Number',
+                                              hintStyle: TextStyle(),
+                                              labelText:
+                                                  '10 Digits Mobile No Requried',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               labelStyle: TextStyle(),
                                             ),
                                             keyboardType: TextInputType.number,
@@ -187,11 +217,19 @@ class RegisterState extends State<Register> {
                                               hintText: 'Please Enter Email',
                                               hintStyle: TextStyle(),
                                               labelText:
+<<<<<<< HEAD
                                               'Enter Your Email Address',
                                               labelStyle: TextStyle(),
                                             ),
                                             keyboardType:
                                             TextInputType.emailAddress,
+=======
+                                                  'Enter Your Email Address',
+                                              labelStyle: TextStyle(),
+                                            ),
+                                            keyboardType:
+                                                TextInputType.emailAddress,
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                             controller: email,
                                           ),
                                         ),
@@ -203,12 +241,20 @@ class RegisterState extends State<Register> {
                                           title: new TextFormField(
                                             decoration: new InputDecoration(
                                               hintText:
+<<<<<<< HEAD
                                               'Create Password (Min 6 & Max 8)',
+=======
+                                                  'Create Password (Min 6 & Max 8)',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               hintStyle: TextStyle(),
                                               labelText: 'Enter Your Password',
                                               labelStyle: TextStyle(),
                                             ),
+<<<<<<< HEAD
                                             maxLength: 6,
+=======
+                                            maxLength: 8,
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                             keyboardType: TextInputType.text,
                                             obscureText: true,
                                             controller: password,
@@ -223,6 +269,7 @@ class RegisterState extends State<Register> {
                                             child: new TextFormField(
                                               decoration: new InputDecoration(
                                                 hintText:
+<<<<<<< HEAD
                                                 'Please Enter Aadhar Card Number',
                                                 hintStyle: TextStyle(),
                                                 labelText:
@@ -231,6 +278,16 @@ class RegisterState extends State<Register> {
                                               ),
                                               keyboardType:
                                               TextInputType.number,
+=======
+                                                    'Please Enter Aadhar Card Number',
+                                                hintStyle: TextStyle(),
+                                                labelText:
+                                                    'Enter Your Aadhar Card Number',
+                                                labelStyle: TextStyle(),
+                                              ),
+                                              keyboardType:
+                                                  TextInputType.number,
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               controller: aadharcard,
                                             ),
                                           ),
@@ -239,7 +296,11 @@ class RegisterState extends State<Register> {
                                           margin: EdgeInsets.only(top: 10.0),
                                           child: Row(
                                             mainAxisAlignment:
+<<<<<<< HEAD
                                             MainAxisAlignment.center,
+=======
+                                                MainAxisAlignment.center,
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                             children: <Widget>[
                                               Container(
                                                 child: Text(
@@ -255,7 +316,11 @@ class RegisterState extends State<Register> {
                                                       context,
                                                       new MaterialPageRoute(
                                                           builder: (context) =>
+<<<<<<< HEAD
                                                           new MyApp()));
+=======
+                                                              new MyApp()));
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                                 },
                                                 child: Container(
                                                   child: Text(
@@ -277,9 +342,15 @@ class RegisterState extends State<Register> {
                                   alignment: Alignment.bottomCenter,
                                   child: ConstrainedBox(
                                     constraints:
+<<<<<<< HEAD
                                     new BoxConstraints(minWidth: 250.0),
                                     child: new RaisedButton(
                                       onPressed: () async{
+=======
+                                        new BoxConstraints(minWidth: 250.0),
+                                    child: new RaisedButton(
+                                      onPressed: () {
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                         if (businessname.text.isEmpty) {
                                           s(context, 'Enter The Business Name');
                                         } else if (mobile.text.isEmpty) {
@@ -303,6 +374,7 @@ class RegisterState extends State<Register> {
                                               'Enter The Aadhar Card Number');
                                         } else {
                                           showloader(context);
+<<<<<<< HEAD
 
                                           await checkIfUserExists(
                                               strQueryMobile:
@@ -330,10 +402,23 @@ class RegisterState extends State<Register> {
                                               createUser(context);
                                               removeloader();
 
+=======
+                                          getjsondata(
+                                                  jsonvalue:
+                                                      'register?businessName=${businessname.text}&password=${password.text}&mobileNumber=${mobile.text}&email=${email.text}&aadharCard=${aadharcard.text}')
+                                              .then((registerjson) {
+                                            removeloader();
+                                            var registerResponseJson =
+                                                json.decode(registerjson.body);
+                                            if (registerResponseJson['status']
+                                                    .toString() ==
+                                                'success') {
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               Navigator.push(
                                                   context,
                                                   new MaterialPageRoute(
                                                       builder: (context) =>
+<<<<<<< HEAD
                                                       new Home()));
 
                                             } else {
@@ -342,12 +427,24 @@ class RegisterState extends State<Register> {
                                             }
                                           });
 
+=======
+                                                          new MobileOTP()));
+                                            } else {
+                                              s(context,
+                                                  registerResponseJson['msg']);
+                                            }
+                                          });
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                         }
                                       },
                                       color: primarycolor,
                                       shape: new RoundedRectangleBorder(
                                           borderRadius:
+<<<<<<< HEAD
                                           new BorderRadius.circular(30.0)),
+=======
+                                              new BorderRadius.circular(30.0)),
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                       child: new Text('REGISTER',
                                           style: new TextStyle(
                                               color: Colors.white,
@@ -368,7 +465,11 @@ class RegisterState extends State<Register> {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
+<<<<<<< HEAD
                                 'By clicking REGISTER you are applicable to ',
+=======
+                                    'By clicking REGISTER you are applicable to ',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                 style: TextStyle(
                                     fontSize: 12.0,
                                     fontWeight: FontWeight.bold,

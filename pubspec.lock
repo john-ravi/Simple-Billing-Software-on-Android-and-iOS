@@ -88,10 +88,17 @@ packages:
     description:
       path: "."
       ref: HEAD
+<<<<<<< HEAD
       resolved-ref: bc30c807fe39b2cfe257f5659223a5c568eed33c
       url: "git://github.com/apptreesoftware/flutter_calendar.git"
     source: git
     version: "0.0.8"
+=======
+      resolved-ref: ffe1dbab87de453448d1224d8e7858b4afc98522
+      url: "https://github.com/apptreesoftware/flutter_calendar.git"
+    source: git
+    version: "0.0.3"
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
   flutter_test:
     dependency: "direct dev"
     description: flutter

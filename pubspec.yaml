@@ -16,8 +16,12 @@ dependencies:
   font_awesome_flutter: ^8.0.1
   shared_preferences: ^0.4.2
   flutter_calendar:
+<<<<<<< HEAD
     git:
      url: git://github.com/apptreesoftware/flutter_calendar.git
+=======
+    git: https://github.com/apptreesoftware/flutter_calendar.git
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
   
 
 

@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:m3/allbills.dart';
 import 'package:m3/colorspage.dart';
+=======
+import 'package:m3/allbills.dart';
+import 'package:m3/colorspage.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
 import 'package:m3/create_bill.dart';
 import 'package:m3/create_catergory.dart';
 import 'package:m3/create_item.dart';
@@ -11,6 +17,7 @@ import 'package:m3/list_customer.dart';
 import 'package:m3/main.dart';
 import 'package:m3/notification.dart';
 import 'package:m3/products.dart';
+<<<<<<< HEAD
 import 'package:m3/user.dart';
 
 import 'allbills.dart';
@@ -24,6 +31,18 @@ import 'settings.dart';
 import 'utils.dart';
 import 'vacation.dart';
 import 'vacationfragment.dart';
+=======
+import 'settings.dart';
+import 'profile.dart';
+import 'vacation.dart';
+import 'delivery_boy.dart';
+import 'allbills.dart';
+import 'orders.dart';
+import 'calender_fragment.dart';
+import 'bills_fragment.dart';
+import 'vacationfragment.dart';
+import 'profileFragment.dart';
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
 
 class Home extends StatefulWidget {
   @override
@@ -34,6 +53,7 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> {
+<<<<<<< HEAD
   int homeIndex = 3;
   User user;
   String userMobile;
@@ -44,12 +64,16 @@ class HomeState extends State<Home> {
     super.initState();
   }
 
+=======
+  int homeIndex = 0;
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
   final List<Widget> homechildren = [
     CalenderFragment(),
     BillFragments(),
     VacationFragment(),
     ProfileFragment(),
   ];
+<<<<<<< HEAD
 
   initMobile() async{
     print("Init Mobile");
@@ -67,6 +91,8 @@ class HomeState extends State<Home> {
     });
   }
 
+=======
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
   void onTabTapped(int index) {
     setState(() {
       homeIndex = index;
@@ -109,7 +135,11 @@ class HomeState extends State<Home> {
                   color: secondarycolor,
                 ),
                 title:
+<<<<<<< HEAD
                 Text('VACATION', style: TextStyle(color: secondarycolor))),
+=======
+                    Text('VACATION', style: TextStyle(color: secondarycolor))),
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
             BottomNavigationBarItem(
                 icon: Icon(
                   FontAwesomeIcons.user,
@@ -129,6 +159,7 @@ class HomeState extends State<Home> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Container(
+<<<<<<< HEAD
                         margin: EdgeInsets.only(top: 10.0),
                         child: Icon(FontAwesomeIcons.user, color: Colors.white),
                       ),
@@ -136,15 +167,33 @@ class HomeState extends State<Home> {
                         margin: EdgeInsets.only(top: 10.0),
                         child: Text(
                           'User Id - Mobile',
+=======
+                        margin:
+                            EdgeInsets.only(top: 10.0),
+                        child: Icon(FontAwesomeIcons.user, color: Colors.white),
+                      ),
+                      Container(
+                        margin:
+                            EdgeInsets.only(top: 10.0),
+                        child: Text(
+                          'User Id - 218',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                           style: TextStyle(fontSize: 18.0, color: Colors.white),
                         ),
                       ),
                       Container(
+<<<<<<< HEAD
                         margin: EdgeInsets.only(top: 10.0),
                         child: Text(
                           "ID",
                           //  (userMobile != null ? userMobile : "123456789
                           // 0"),
+=======
+                        margin: EdgeInsets.only(
+                            top: 10.0),
+                        child: Text(
+                          '1234567890',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                           style: TextStyle(fontSize: 18.0, color: Colors.white),
                         ),
                       ),
@@ -315,7 +364,11 @@ class HomeState extends State<Home> {
                   FontAwesomeIcons.bell,
                   color: secondarycolor,
                 ),
+<<<<<<< HEAD
                 onTap: () {
+=======
+                 onTap: () {
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                   Navigator.push(
                       context,
                       new MaterialPageRoute(
@@ -328,9 +381,17 @@ class HomeState extends State<Home> {
                   FontAwesomeIcons.infoCircle,
                   color: secondarycolor,
                 ),
+<<<<<<< HEAD
                 onTap: () {
                   Navigator.push(context,
                       new MaterialPageRoute(builder: (context) => new Help()));
+=======
+                 onTap: () {
+                  Navigator.push(
+                      context,
+                      new MaterialPageRoute(
+                          builder: (context) => new Help()));
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                 },
               ),
               new ListTile(

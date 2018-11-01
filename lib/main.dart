@@ -27,7 +27,10 @@ class MyAppState extends State<MyApp> {
 
   TextEditingController mobile = new TextEditingController();
   TextEditingController password = new TextEditingController();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -89,15 +92,26 @@ class MyAppState extends State<MyApp> {
                                             title: new TextFormField(
                                               decoration: new InputDecoration(
                                                 hintText:
+<<<<<<< HEAD
                                                 'Please Enter Mobile Number',
                                                 hintStyle: TextStyle(),
                                                 labelText:
                                                 '10 Digits Mobile No Requried',
+=======
+                                                    'Please Enter Mobile Number',
+                                                hintStyle: TextStyle(),
+                                                labelText:
+                                                    '10 Digits Mobile No Requried',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                                 labelStyle: TextStyle(),
                                               ),
                                               controller: mobile,
                                               keyboardType:
+<<<<<<< HEAD
                                               TextInputType.number,
+=======
+                                                  TextInputType.number,
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                             ),
                                           ),
                                           new ListTile(
@@ -110,7 +124,11 @@ class MyAppState extends State<MyApp> {
                                                 hintText: 'Enter Your Password',
                                                 hintStyle: TextStyle(),
                                                 labelText:
+<<<<<<< HEAD
                                                 'Enter Your Password',
+=======
+                                                    'Enter Your Password',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                                 labelStyle: TextStyle(),
                                               ),
                                               controller: password,
@@ -128,7 +146,11 @@ class MyAppState extends State<MyApp> {
                                                     context,
                                                     new MaterialPageRoute(
                                                         builder: (context) =>
+<<<<<<< HEAD
                                                         new ForgotPassword()));
+=======
+                                                            new ForgotPassword()));
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               },
                                               child: Center(
                                                 child: Text(
@@ -144,7 +166,11 @@ class MyAppState extends State<MyApp> {
                                             margin: EdgeInsets.only(top: 10.0),
                                             child: Row(
                                               mainAxisAlignment:
+<<<<<<< HEAD
                                               MainAxisAlignment.center,
+=======
+                                                  MainAxisAlignment.center,
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               children: <Widget>[
                                                 Container(
                                                   child: Text(
@@ -160,7 +186,11 @@ class MyAppState extends State<MyApp> {
                                                         context,
                                                         new MaterialPageRoute(
                                                             builder: (context) =>
+<<<<<<< HEAD
                                                             new Register()));
+=======
+                                                                new Register()));
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                                   },
                                                   child: Container(
                                                     child: Text(
@@ -168,7 +198,11 @@ class MyAppState extends State<MyApp> {
                                                       style: TextStyle(
                                                           fontSize: 16.0,
                                                           color:
+<<<<<<< HEAD
                                                           secondarycolor),
+=======
+                                                              secondarycolor),
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                                     ),
                                                   ),
                                                 )
@@ -183,9 +217,15 @@ class MyAppState extends State<MyApp> {
                                     alignment: Alignment.bottomCenter,
                                     child: ConstrainedBox(
                                       constraints:
+<<<<<<< HEAD
                                       new BoxConstraints(minWidth: 250.0),
                                       child: new RaisedButton(
                                         onPressed: () async {
+=======
+                                          new BoxConstraints(minWidth: 250.0),
+                                      child: new RaisedButton(
+                                        onPressed: () {
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                           if (mobile.text.isEmpty) {
                                             s(context,
                                                 'Enter The Mobile Number');
@@ -193,13 +233,18 @@ class MyAppState extends State<MyApp> {
                                               mobile.text.length < 10) {
                                             s(context,
                                                 'Please Check The Mobile Number');
+<<<<<<< HEAD
                                           } else if (password.text.isEmpty) {
+=======
+                                          }else if (password.text.isEmpty) {
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                             s(context, 'Enter The Password');
                                           } else if (password.text.length < 6) {
                                             s(context,
                                                 'Minimum Length Of The Password Is 6');
                                           } else {
                                             showloader(context);
+<<<<<<< HEAD
 
                                             await checkIfUserRegistered(
                                                 strQueryRegistered:
@@ -250,6 +295,9 @@ class MyAppState extends State<MyApp> {
                                             });
 
 /*                                            getjsondata(
+=======
+                                            getjsondata(
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                                     jsonvalue:
                                                         'login?mobile=${mobile.text}&password=${password.text}')
                                                 .then((loginjson) {
@@ -259,21 +307,38 @@ class MyAppState extends State<MyApp> {
                                               if (registerResponseJson['status']
                                                       .toString() ==
                                                   'success') {
+<<<<<<< HEAD
 
+=======
+                                                Navigator.push(
+                                                    context,
+                                                    new MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            new Home()));
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                               } else {
                                                 s(
                                                     context,
                                                     registerResponseJson[
                                                         'msg']);
                                               }
+<<<<<<< HEAD
                                             });*/
+=======
+                                            });
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                           }
                                         },
                                         color: primarycolor,
                                         shape: new RoundedRectangleBorder(
                                             borderRadius:
+<<<<<<< HEAD
                                             new BorderRadius.circular(
                                                 30.0)),
+=======
+                                                new BorderRadius.circular(
+                                                    30.0)),
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                         child: new Text('LOGIN',
                                             style: new TextStyle(
                                                 color: Colors.white,
@@ -294,7 +359,11 @@ class MyAppState extends State<MyApp> {
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
+<<<<<<< HEAD
                                   'By clicking LOGIN you are applicable to ',
+=======
+                                      'By clicking LOGIN you are applicable to ',
+>>>>>>> 214278badedb74e9f1396e0e34d533bd6359464b
                                   style: TextStyle(
                                       fontSize: 12.0,
                                       fontWeight: FontWeight.bold,
